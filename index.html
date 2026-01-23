@@ -146,7 +146,7 @@ async function fetchStatus(){
         const icon = data.icon ?? '';
 
         // jesli w motd jest slowo "offline", pokazujemy offline
-        const isOfflineMOTD = motd.toLowerCase().includes("offline");
+        const isOfflineMOTD = motd.toLowerCase().includes("paused");
 
         document.getElementById('status').innerText = online && !isOfflineMOTD ? '🟢 ONLINE' : '🔴 OFFLINE';
         document.getElementById('playersCount').innerText = `${onlinePlayers} / ${maxPlayers}`;
@@ -168,5 +168,6 @@ fetchStatus(); setInterval(fetchStatus,5000);
 </body>
 
 </html>
+
 
 
