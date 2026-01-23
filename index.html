@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AmethystMC – Dobry Serwer Minecraft</title>
+<title>EndMC – Dobry Serwer Minecraft</title>
 <link rel="icon" type="image/x-icon" href="logo.png">
 <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
 <style>
@@ -42,12 +42,12 @@ footer{text-align:center;padding:30px;opacity:.6;color:#fff;}
 
 <header>
 <p>NOWOCZESNY SERWER MINECRAFT</p>
-<h1>AmethystMC</h1>
+<h1>EndMC</h1>
 <div class="btns">
 <a href="#" id="copyButton" class="btn primary">SKOPIUJ IP SERWERA</a>
 <a href="https://discord.gg/rQ2TQNVby" target="_blank" class="btn secondary">DISCORD</a>
 </div>
-<p class="ip">IP: <span id="ip">amethyst-mc.aternos.me:61773</span></p>
+<p class="ip">IP: <span id="ip">endmc.mcsh.io</span></p>
 </header>
 
 <section>
@@ -80,7 +80,7 @@ footer{text-align:center;padding:30px;opacity:.6;color:#fff;}
 </div>
 </section>
 
-<footer>© 2025 AmethystMC • Server Minecraft</footer>
+<footer>© 2025 EndMC • Server Minecraft</footer>
 
 <div id="mcToast">📋 IP skopiowane do schowka</div>
 <audio id="clickSound"><source src="audio/minecraft_click.mp3" type="audio/mpeg"></audio>
@@ -136,7 +136,7 @@ drawBG();
 // ===== STATUS API =====
 async function fetchStatus(){
     try{
-        const res = await fetch('https://eloelo-production.up.railway.app/api/status');
+        const res = await fetch('https://eloelo-bhgv.onrender.com/api/status');
         const data = await res.json();
 
         const online = data.online ?? false;
@@ -168,4 +168,5 @@ fetchStatus(); setInterval(fetchStatus,5000);
 </body>
 
 </html>
+
 
