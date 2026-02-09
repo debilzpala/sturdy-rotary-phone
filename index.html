@@ -3,25 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EndMC – Dobry Serwer Minecraft</title>
+<title>FantaMC – Dobry Serwer Minecraft</title>
 <link rel="icon" type="image/x-icon" href="logo.png">
 <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Minecraft','Inter',sans-serif;}
-body{overflow-x:hidden;cursor:url('https://i.imgur.com/ZX1aXbX.png'),auto;background:radial-gradient(circle at top,#A900FF,#000);color:#000;}
+body{overflow-x:hidden;cursor:url('https://i.imgur.com/ZX1aXbX.png'),auto;background:radial-gradient(circle at top,#FF5F17,#000);color:#000;}
 header{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px 20px;}
-h1{font-size:clamp(3rem,7vw,6rem);background:linear-gradient(90deg,#A900FF,#ff0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:float 3s ease-in-out infinite;}
+h1{font-size:clamp(3rem,7vw,6rem);background:linear-gradient(90deg,#ff8016,#ff0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:float 3s ease-in-out infinite;}
 @keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
 .btns{display:flex;gap:15px;margin:25px 0;flex-wrap:wrap;justify-content:center;}
 .btn{padding:14px 28px;border-radius:14px;text-decoration:none;font-weight:600;transition:.25s;cursor:pointer;}
-.primary{background:linear-gradient(90deg,#A900FF,#fff);color:#000;}
-.secondary{border:2px solid #A900FF;color:#000;background:none;}
+.primary{background:linear-gradient(90deg,#ff8016,#fff);color:#000;}
+.secondary{border:2px solid#ff8016;color:#000;background:none;}
 .btn:hover{transform:scale(1.1);}
 .ip{margin-top:10px;color:#000;}
 #copyButton{position:relative;}
 #copyButton::after{content:"Kliknij aby skopiowac";position:absolute;bottom:-36px;left:50%;transform:translateX(-50%);background:#fff;padding:6px 10px;font-size:.7rem;border-radius:6px;opacity:0;transition:.25s;white-space:nowrap;}
 #copyButton:hover::after{opacity:1;}
-#mcToast{position:fixed;bottom:40px;left:50%;transform:translateX(-50%) scale(.9);background:#111;border:3px solid #3aff3a;padding:14px 26px;font-size:14px;opacity:0;transition:.35s ease;box-shadow:0 0 20px rgba(0,0,0,.6);z-index:9999;color:#fff;}
+#mcToast{position:fixed;bottom:40px;left:50%;transform:translateX(-50%) scale(.9);background:#FF5F17;border:3px solid #FF5F17;padding:14px 26px;font-size:14px;opacity:0;transition:.35s ease;box-shadow:0 0 20px rgba(0,0,0,.6);z-index:9999;color:#FF5F17;}
 #mcToast.show{opacity:1;transform:translateX(-50%) scale(1);}
 #status-container{width:clamp(300px,80%,400px);margin:30px auto;padding:30px;background:rgba(255,255,255,.05);border-radius:24px;backdrop-filter:blur(14px);text-align:center;}
 #serverIcon{width:64px;height:64px;margin-bottom:10px;}
@@ -42,7 +42,7 @@ footer{text-align:center;padding:30px;opacity:.6;color:#000;}
 
 <header>
 <p>NOWOCZESNY SERWER MINECRAFT</p>
-<h1>EndMC</h1>
+<h1>FantaMC</h1>
 <div class="btns">
 <a href="#" id="copyButton" class="btn primary">SKOPIUJ IP SERWERA</a>
 <a href="https://discord.gg/JyTcHXXw" target="_blank" class="btn secondary">DISCORD</a>
@@ -53,34 +53,34 @@ footer{text-align:center;padding:30px;opacity:.6;color:#000;}
 <section>
 <div id="status-container">
 <img id="serverIcon" src="" alt="Ikona serwera">
-<h3>📊 STATUS SERWERA</h3>
+<h3>STATUS SERWERA</h3>
 <p id="status">Sprawdzanie...</p>
 <p>MOTD: <span id="motd">Ładowanie...</span></p>
-<p>👥 GRACZE ONLINE: <span id="playersCount">0 / 0</span></p>
-<p><span id="percent">📊 0%</span></p>
+<p>GRACZE ONLINE: <span id="playersCount">0 / 0</span></p>
+<p><span id="percent">0%</span></p>
 </div>
 
 <div class="features">
 <div class="card">
-<h3>⚡ WYDAJNOSC</h3>
-<p>Stabilny serwer, niski ping i brak lagow – gramy plynnie 24/7.</p>
+<h3>WYDAJNOSC</h3>
+<p>Stabilny serwer, niski ping i brak lagow – gramy plynnie 24/7 z dużym fanbasem.</p>
 </div>
 <div class="card">
-<h3>🧩 TRYBY</h3>
+<h3>TRYBY</h3>
 <p>Autorskie systemy i eventy.</p>
 </div>
 <div class="card">
-<h3>👥 SPOLECZNOSC</h3>
+<h3>SPOLECZNOSC</h3>
 <p>Aktywni gracze i pomocna administracja.</p>
 </div>
 <div class="card">
-<h3>🔒 BEZPIECZENSTWO</h3>
+<h3>BEZPIECZENSTWO</h3>
 <p>Anty-cheat, backupy i ochrona danych graczy.</p>
 </div>
 </div>
 </section>
 
-<footer>© 2025 EndMC • Server Minecraft</footer>
+<footer>© 2025 FantaMC • Server Minecraft</footer>
 
 <div id="mcToast">📋 IP skopiowane do schowka</div>
 <audio id="clickSound"><source src="audio/minecraft_click.mp3" type="audio/mpeg"></audio>
@@ -168,4 +168,5 @@ fetchStatus(); setInterval(fetchStatus,5000);
 </body>
 
 </html>
+
 
