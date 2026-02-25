@@ -136,7 +136,7 @@ drawBG();
 // ===== STATUS API =====
 async function fetchStatus(){
     try{
-        const res = await fetch('https://eloelo-bhgv.onrender.com/api/status');
+        const res = await fetch('https://eloelo-ochre.vercel.app/api/status');
         const data = await res.json();
 
         const online = data.online ?? false;
@@ -168,6 +168,7 @@ fetchStatus(); setInterval(fetchStatus,5000);
 </body>
 
 </html>
+
 
 
 
